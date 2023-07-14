@@ -115,6 +115,15 @@ jQuery(document).ready(function ($) {
 
 });
 
+const links = document.querySelectorAll('.villa-links')
+links.forEach((item) => {
+    item.addEventListener("click", () => {
+        let el = document.getElementById(item.getAttribute('data-link'));
+        el.scrollIntoView({ block: "center" })
+    })
+
+});
+
 
 // Navigation ul toggle
 
@@ -165,7 +174,6 @@ $(function () {
 // Accordion
 
 const btns = document.querySelectorAll(".acc-btn");
-console.log(btns) 
 
 function accordion() {
     const content = this.nextElementSibling;
