@@ -165,6 +165,7 @@ $(function () {
 // Accordion
 
 const btns = document.querySelectorAll(".acc-btn");
+console.log(btns) 
 
 function accordion() {
     const content = this.nextElementSibling;
