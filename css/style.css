@@ -2099,7 +2099,6 @@ label {
   .travel-box .tab-content::before {
     height: 70%;
     z-index: 0;
-    top: 262px;
   }
 
   .desc-tabs .nav-tabs {
@@ -2123,6 +2122,10 @@ label {
     background-image: linear-gradient(to top, #ffffff91, rgb(255 255 255 / 67%));
     padding: 1rem;
     text-align: center;
+  }
+
+  #blog .item .carousel{
+    margin-right: 0!important;
   }
 
   #featured {
