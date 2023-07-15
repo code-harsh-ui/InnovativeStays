@@ -1380,9 +1380,12 @@ label {
 
 #blog .tabgroup ul li img {
   float: left;
-  margin-right: 350px;
+  /* margin-right: 350px; */
   max-width: 100%;
   overflow: hidden;
+}
+#blog .carousel-item{
+width: 25rem;
 }
 
 #blog .tabgroup ul li .text-content {
