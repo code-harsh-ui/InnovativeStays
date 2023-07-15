@@ -98,11 +98,12 @@ jQuery(document).ready(function ($) {
             }
         });
     }
-    function smoothScroll(target) {
-        $('body,html').animate({
-            scrollTop: target.offset().top
-        }, 800);
-    }
+    
+    // function smoothScroll(target) {
+    //     $('body,html').animate({
+    //         scrollTop: target.offset().top
+    //     }, 800);
+    // }
 
 
     $('.button a[href*="#"]').on('click', function (e) {
