@@ -98,7 +98,7 @@ jQuery(document).ready(function ($) {
             }
         });
     }
-    
+
     // function smoothScroll(target) {
     //     $('body,html').animate({
     //         scrollTop: target.offset().top
@@ -287,13 +287,13 @@ function whatsapp() {
     var pets = $('#pets').val();
 
     var url = "https://wa.me/+918355936182?text="
-        + "*Query from (www.innovativestays.com)*" + "%0a"
+        + "*Query from (www.innovativestays.com)* " + "%0a"
         + "*Name :* " + name + "%0a"
         + "*Phone :* " + phone + "%0a"
         + "*Villa :* " + villa + "%0a"
         + "*Check-In :* " + datepicker + "%0a"
         + "*Check-Out :* " + datepicker_two + "%0a"
-        + "*Size :* " + size + "%0a"
+        + "*BHK :* " + size + "%0a"
         + "*Range :* " + range + "%0a"
         + "*Children :* " + children + "%0a"
         + "*Guests :* " + guest + "%0a"
