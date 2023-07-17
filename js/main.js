@@ -178,6 +178,7 @@ const btns = document.querySelectorAll(".acc-btn");
 
 function accordion() {
     const content = this.nextElementSibling;
+  
     const isOpen = this.classList.contains("is-open");
 
     // Close all accordions
@@ -197,8 +198,8 @@ function accordion() {
 btns.forEach((el) => el.addEventListener("click", accordion));
 
 // Open the first accordion by default
-if (btns.length > 0) {
-    btns[0].click();
+if (btns.length > 1) {
+    btns[1].click();
 }
 
 
