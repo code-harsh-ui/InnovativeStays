@@ -2135,6 +2135,10 @@ width: 25rem;
     margin-right: 0!important;
   }
 
+  .price_tag {
+    font-size: 18px;
+}
+
   #featured {
     padding-left: 15px;
     padding-right: 15px;
