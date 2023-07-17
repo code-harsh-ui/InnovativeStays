@@ -2225,9 +2225,10 @@ width: 25rem;
 
   #contact-content .social-icons{
     justify-content: center;
+    padding-left: 0;
   }
   #contact-content .social-icons li{
-    margin-right: 2rem;
+    margin-right: 0rem;
   }
 
   #contact .payment img {
