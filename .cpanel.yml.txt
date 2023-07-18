@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/zsegc28osnfv/repositories/InnovativeStays
+    - export DEPLOYPATH=/home/zsegc28osnfv/repositories/InnovativeStays/
     - /bin/cp * $DEPLOYPATH
   
