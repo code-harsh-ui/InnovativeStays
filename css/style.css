@@ -1665,11 +1665,12 @@ width: 25rem;
 }
 /* Accordion  end */
 
-#contact-content .social-icons{
+#contact-content .social-icons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   list-style-type: none;
+  margin-left: -3rem;
 }
 #contact-content .social-icons li {
   margin-left: 2rem;
@@ -2223,10 +2224,11 @@ width: 25rem;
     padding-right: 15px;
   }
 
-  #contact-content .social-icons{
+  #contact-content .social-icons {
     justify-content: center;
-    padding-left: 0;
-  }
+    padding-left: 0px;
+    margin-right: 20px;
+}
   #contact-content .social-icons li{
     margin-right: 0rem;
   }

@@ -116,6 +116,8 @@ jQuery(document).ready(function ($) {
 
 });
 
+// Book now Button
+
 const links = document.querySelectorAll('.villa-links')
 links.forEach((item) => {
     item.addEventListener("click", () => {
