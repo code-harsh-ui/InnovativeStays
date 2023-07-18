@@ -2,5 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/zsegc28osnfv/repositories/InnovativeStays/
-    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp * $DEPLOYPATH
   
