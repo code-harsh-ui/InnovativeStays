@@ -2227,7 +2227,7 @@ width: 25rem;
   #contact-content .social-icons {
     justify-content: center;
     padding-left: 0px;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
   #contact-content .social-icons li{
     margin-right: 0rem;
