@@ -180,7 +180,7 @@ const btns = document.querySelectorAll(".acc-btn");
 
 function accordion() {
     const content = this.nextElementSibling;
-  
+
     const isOpen = this.classList.contains("is-open");
 
     // Close all accordions
@@ -204,78 +204,7 @@ if (btns.length > 1) {
     btns[1].click();
 }
 
-
-
-
-
-
-
-// function sendmail() {
-
-//     var name = $('#name').val();
-//     var phone = $('#phone').val();
-//     var villa = $('#villa').val();
-//     var size = $('#size').val();
-//     var range = $('#range').val();
-//     var datepicker = $('#datepicker').val();
-//     var datepicker_two = $('#datepicker_two').val();
-//     var pets = $('#pets').val();
-
-
-//     var Body = 'Name: ' + name + '<br>Phone: ' + phone + '<br>Villa: ' + villa + '<br>Size: ' + size + '<br>CheckIn: ' + datepicker + '<br>CheckOut: ' + datepicker_two + '<br>Pets: ' + pets + '<br>Range: ' + range;
-
-//     var spinner = `<div class="spinner-border text-light" role="status">
-//     <span class="visually-hidden">Loading...</span>
-//   </div>`;
-
-
-//     $("#sendQuote").html(spinner);
-
-//     function sent() {
-//         let message = document.getElementById('message');
-//         console.log(message)
-//         message.innerHTML = `<span style="padding:8px; margin-top:8px;" class="badge bg-success">Thank you! We'll Get back to you soon.</span>`;
-//         setTimeout(() => {
-//             message.innerHTML = "";
-//         }, 5000);
-//     }
-
-//     function failed() {
-//         let message = document.getElementById('message');
-//         console.log(message)
-//         message.innerHTML = `<span style="padding:8px; margin-top:8px;" class="badge bg-danger">Try again.</span>`;
-//         setTimeout(() => {
-//             message.innerHTML = "";
-//         }, 5000);
-//     }
-//     var bookingForm = document.getElementById('bookingForm');
-
-//     Email.send({
-//         SecureToken: "d2d16b86-5e48-45fa-a179-438950376ff2",
-//         To: 'hello@webybuild.com',
-//         From: "vampharsh@gmail.com",
-//         Subject: "Message from Client :- " + name,
-//         Body: Body
-//     }).then(
-//         message => {
-//             if (message == 'OK') {
-//                 // alert('Your mail has been send. Thank you for connecting.');
-//                 sent();
-//                 $("#sendQuote").text("Send Us");
-//                 bookingForm.reset();
-
-//             } else {
-//                 // console.error(message);
-//                 // alert('There is an error sending message.')
-//                 failed();
-//                 $("#sendQuote").text("Send Us");
-
-//             }
-
-//         }
-//     );
-// }
-
+// Booking Form
 
 function whatsapp() {
     var name = $('#name').val();
