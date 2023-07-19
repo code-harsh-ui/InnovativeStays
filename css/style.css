@@ -4,6 +4,7 @@ body {
 }
 
 
+
 /* .preloader {
   position: fixed;
   top: 0;
@@ -90,7 +91,7 @@ p {
   line-height: 24px;
 }
 
-::placeholder{
+::placeholder {
   color: #f5831f61;
 
 }
@@ -290,7 +291,7 @@ header {
   letter-spacing: 0.5px;
   height: 100px;
   width: 100%;
-  display: flex ;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -721,6 +722,7 @@ nav .active-section span {
   /* border-bottom: transparent; */
   padding: 11px;
 }
+
 .travel-box .range::before {
   position: absolute;
   content: "\20B9";
@@ -739,6 +741,7 @@ nav .active-section span {
 .travel-box .whatsapp input {
   padding-left: 6rem;
 }
+
 .travel-box .range input {
   padding-left: 4rem;
 }
@@ -1244,15 +1247,17 @@ label {
   border: none;
 }
 
-.whyInno .col-lg-2{
- display: flex;
- flex-direction: column;
- margin-bottom: 1rem;
+.whyInno .col-lg-2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
 }
-.whyInno .col-lg-2 p{
+
+.whyInno .col-lg-2 p {
   position: relative;
 }
-.whyInno .col-lg-2 i{
+
+.whyInno .col-lg-2 i {
   font-size: 10rem;
 }
 
@@ -1325,7 +1330,7 @@ label {
   transition: 0.5s;
 }
 
-#blog .tabs a img{
+#blog .tabs a img {
   height: 40px;
   width: 40px;
   margin-right: 2rem;
@@ -1388,8 +1393,9 @@ label {
   max-width: 100%;
   overflow: hidden;
 }
-#blog .carousel-item{
-width: 25rem;
+
+#blog .carousel-item {
+  width: 25rem;
 }
 
 #blog .tabgroup ul li .text-content {
@@ -1602,12 +1608,14 @@ width: 25rem;
   justify-content: center;
   transform: translateY(-55%);
 }
+
 .hero .img {
-  filter: drop-shadow(0rem 1.5rem rgba(0,0,0,0.1));
+  filter: drop-shadow(0rem 1.5rem rgba(0, 0, 0, 0.1));
   transition: 0.3s ease-out;
 }
+
 .card:hover .img {
-  filter: drop-shadow(0rem 2.5rem rgba(0,0,0,0.1));
+  filter: drop-shadow(0rem 2.5rem rgba(0, 0, 0, 0.1));
 }
 
 .title {
@@ -1619,6 +1627,7 @@ width: 25rem;
 .acc-container {
   padding: 4rem 2rem;
 }
+
 .acc-btn {
   width: 100%;
   padding: 1.6rem 2rem;
@@ -1630,23 +1639,27 @@ width: 25rem;
   text-align: left;
   transition: all 0.5s linear;
 }
+
 .acc-btn:after {
   content: "\27A4";
   color: #333;
   float: right;
   transition: all 0.3s linear;
 }
+
 .acc-btn.is-open:after {
   transform: rotate(90deg);
 }
-.acc-btn:hover, .acc-btn.is-open {
+
+.acc-btn:hover,
+.acc-btn.is-open {
   color: #000;
   font-weight: bold;
 }
 
 .acc-content {
   max-height: 0;
-  color: rgba(0,0,0,0.75);
+  color: rgba(0, 0, 0, 0.75);
   font-size: 1.5rem;
   margin: 0 2rem;
   padding-left: 1rem;
@@ -1659,10 +1672,12 @@ width: 25rem;
   text-align: center;
   padding: 1rem;
 }
+
 .credit a {
   text-decoration: wavy underline;
   color: dodgerblue;
 }
+
 /* Accordion  end */
 
 #contact-content .social-icons {
@@ -1672,6 +1687,7 @@ width: 25rem;
   list-style-type: none;
   margin-left: -3rem;
 }
+
 #contact-content .social-icons li {
   margin-left: 2rem;
   font-size: 3rem;
@@ -1732,7 +1748,7 @@ width: 25rem;
   background-color: #f4f4f4;
 }
 
-#contact .payment{
+#contact .payment {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1767,9 +1783,22 @@ width: 25rem;
 }
 
 .footer p a {
+  display: flex;
   text-decoration: none;
   color: #fff;
   font-weight: 600;
+  justify-content: center;
+  height: 12px;
+  align-items: center;
+  width: 100%;
+}
+
+.footer p span {
+padding: 0 5px;
+}
+.footer p img {
+  height: 2rem;
+  width: 2rem;
 }
 
 
@@ -1789,11 +1818,11 @@ width: 25rem;
     flex-direction: column;
     padding: 9px 2rem;
     line-height: 20px;
-}
+  }
 
-#blog .tabs a img {
-  margin-right: 0rem;
-}
+  #blog .tabs a img {
+    margin-right: 0rem;
+  }
 }
 
 @media screen and (max-width: 1033px) {
@@ -2133,13 +2162,13 @@ width: 25rem;
     text-align: center;
   }
 
-  #blog .item .carousel{
-    margin-right: 0!important;
+  #blog .item .carousel {
+    margin-right: 0 !important;
   }
 
   .price_tag {
     font-size: 18px;
-}
+  }
 
   #featured {
     padding-left: 15px;
@@ -2203,7 +2232,7 @@ width: 25rem;
     flex-direction: column;
     padding: 9px 2rem;
     line-height: 20px;
-}
+  }
 
   #blog .tabs_group::before {
     padding-left: 22rem;
@@ -2229,8 +2258,9 @@ width: 25rem;
     justify-content: center;
     padding-left: 0px;
     /* margin-right: 20px; */
-}
-  #contact-content .social-icons li{
+  }
+
+  #contact-content .social-icons li {
     margin-right: 0rem;
   }
 
@@ -2241,12 +2271,12 @@ width: 25rem;
 
   .acc-container {
     padding: 4rem 0rem;
-}
+  }
 
-.acc-btn {
-  width: 100%;
-  padding: 0.6rem 1rem;
-  font-size: 10px!important;
-}
+  .acc-btn {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 10px !important;
+  }
 
 }
