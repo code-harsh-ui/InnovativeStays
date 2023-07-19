@@ -4,7 +4,7 @@ body {
 }
 
 
-.preloader {
+/* .preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -80,7 +80,7 @@ body {
     -webkit-transform: scale(1, 1);
     opacity: 0
   }
-}
+} */
 
 /* Presets */
 
@@ -1758,8 +1758,9 @@ width: 25rem;
 
 .footer p {
   margin-bottom: 0px;
+  margin-top: 18px;
   font-size: 13px;
-  line-height: 40px;
+  line-height: 27px;
   color: #fff;
   letter-spacing: 0.5px;
   font-weight: 300;
