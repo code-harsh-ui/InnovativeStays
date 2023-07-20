@@ -65,13 +65,13 @@
     }
 
     .css-cchq72 {
-    z-index: 20;
-}
+        z-index: 20;
+    }
 </style>
 
 <body>
     <!-- Preloader -->
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="preloader-inner">
             <div class="preloader-icon"> <span></span><img style="border-radius: 50%;"
                     src="https://dl.dropboxusercontent.com/s/r8a66j2pkridwdc/loader.jpg?dl=0" alt="preloader" srcset="">
@@ -79,7 +79,7 @@
             </div>
         </div>
         <h1 style="display: flex; justify-content: center; margin-top: 10%;">Please wait</h1>
-    </div> -->
+    </div>
 
     <header class="nav-down responsive-nav hidden-lg hidden-md">
         <div style="display: flex; margin-left: 16px;" class="logo">
@@ -195,7 +195,10 @@
                             <h1>Holiday Home<br>Innovative Stays</h1>
                             <p>Rent our exquisite villas for a memorable stay,<br>
                                 perfect for clients seeking the comfort and charm of a holiday home.</p>
-                                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script> </form>
+                            <form>
+                                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                    data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script>
+                            </form>
                             <div class="white-button button">
                                 <!-- <a href="#featured">Discover More</a> -->
                             </div>
@@ -214,7 +217,10 @@
                             <p>Indulge in opulent living at our exquisite luxurious villas, where clients can rent
                                 <br>and experience a dream-like holiday home stay.
                             </p>
-                            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script> </form>
+                            <form>
+                                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                    data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script>
+                            </form>
 
                             <div class="white-button button">
                                 <!-- <a href="#featured">Share More</a> -->
@@ -233,7 +239,10 @@
                             <h1>Home Stay<br> Innovative Stays</h1>
                             <p>Rent our villas for a cozy HomeStay experience <br>enjoy a comfortable and personalized
                                 getaway that feels just like home.</p>
-                                <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script> </form>
+                            <form>
+                                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                    data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script>
+                            </form>
 
                             <div class="white-button button">
                                 <!-- <a href="#featured">Learn More</a> -->
@@ -505,7 +514,10 @@
 
                                                 </div><!--/.tab-para-->
                                             </form>
-                                            <form style="margin-top: 1rem;"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script> </form>
+                                            <form style="margin-top: 1rem;">
+                                                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                    data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script>
+                                            </form>
                                         </div><!--/.tabpannel-->
 
 
@@ -4264,8 +4276,7 @@
                                 </fieldset>
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
-                                <input type="hidden" name="_next"
-                                    value="https://www.innovativestays.com/thanks.html">
+                                <input type="hidden" name="_next" value="https://www.innovativestays.com/thanks.html">
                             </div>
                             <div class="col-md-12">
                                 <fieldset>
@@ -4284,7 +4295,8 @@
         </section>
         <section class="footer">
             <p>Copyright &copy; 2023 Innovative Stays.<br><a href="http://www.Webybuild.com" target="_blank"> Developed
-                    By <span><img src="https://dl.dropboxusercontent.com/s/c97l89uhvqwscsv/weby.png?dl=0" alt="" srcset=""></span> www.webybuild.com</a></p>
+                    By <span><img src="https://dl.dropboxusercontent.com/s/c97l89uhvqwscsv/weby.png?dl=0" alt=""
+                            srcset=""></span> www.webybuild.com</a></p>
         </section>
     </div>
 
@@ -4304,6 +4316,24 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/datepicker.js"></script>
     <script src="slick/slick.min.js"></script>
+    <script>
+
+        // Preloader
+
+        (function ($) {
+            "use strict";
+            window.onload = function () {
+                window.setTimeout(fadeout, 500);
+            };
+
+            function fadeout() {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                preloader.style.display = 'none';
+            }
+
+        })(jQuery);
+    </script>
 </body>
 
 </html>

@@ -66,23 +66,6 @@ jQuery(document).ready(function ($) {
         }
     })
 
-    // Preloader
-
-/*     (function ($) {
-        "use strict";
-        window.onload = function () {
-            window.setTimeout(fadeout, 500);
-        };
-
-        function fadeout() {
-            var preloader = document.querySelector('.preloader');
-            preloader.style.opacity = '0';
-            preloader.style.display = 'none';
-        }
-
-    })(jQuery); */
-
-
 
     var contentSection = $('.content-section, .main-banner');
     var navigation = $('nav'); 
