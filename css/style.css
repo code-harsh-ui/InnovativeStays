@@ -1326,23 +1326,37 @@ label {
 .left {
   position: absolute;
   left: 0;
-  top: 45px;
+  top: 0;
   border: none;
-  height: 9rem;
+  height: 90px;
+  width: 27px;
   z-index: 4;
-  transform: translateY(-50%);
-  outline: none;
 }
 
 .right {
   position: absolute;
   right: 0;
-  top: 45px;
+  top: 0;
   border: none;
-  height: 9rem;
+  height: 90px;
+  width: 27px;
   z-index: 4;
-  transform: translateY(-50%);
+}
+
+.right, .left {
+  background-color: #eeeeee;
+  color: black;
+  border-bottom: 10px solid #f5821f;
+}
+
+
+.left:hover i, .right:hover i{
+  color: orangered;
+}
+
+.left:focus, .right:focus{
   outline: none;
+
 }
 
 
@@ -1377,11 +1391,15 @@ label {
   font-weight: 600;
   transition: 0.5s;
 }
-
-#blog .tabs a img {
+#blog .tabs a span {
   height: 40px;
   width: 40px;
-  margin-right: 5rem;
+  margin-right: 1rem;
+}
+
+#blog .tabs a img {
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -1852,6 +1870,11 @@ label {
 
 
 /*----------------------------------- Responsive Style ---------------------------------------- */
+@media screen and (min-width: 1741px) {
+  .left,.right{
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1080px) {
 
@@ -1865,11 +1888,11 @@ label {
 
   #blog .tabs a {
     flex-direction: column;
-    padding: 9px 2rem;
+    padding: 11px 2rem;
     line-height: 20px;
   }
 
-  #blog .tabs a img {
+  #blog .tabs a span {
     margin-right: 0rem;
   }
 }
@@ -2250,9 +2273,6 @@ label {
     padding-right: 15px;
   }
 
-  #blog .tabs a {
-    font-size: 13px;
-  }
 
   #blog .tabgroup ul li img {
     float: none;
@@ -2281,10 +2301,16 @@ label {
     padding-left: 10px;
   }
 
+  #blog .tabs {
+    width: 86%;
+}
+  
+
   #blog .tabs a {
     flex-direction: column;
-    padding: 9px 2rem;
+    padding: 11px 2rem;
     line-height: 20px;
+    font-size: 13px;
   }
 
   #blog .tabs_group::before {
@@ -2294,7 +2320,7 @@ label {
   }
 
   #blog .tabs li {
-    width: 25%;
+    width: 30%;
   }
 
   #blog .item .text-content .accent-button {
