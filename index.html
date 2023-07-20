@@ -229,7 +229,8 @@
                         <div>
                             <h1>Home Stay<br> Innovative Stays</h1>
                             <p>Rent our villas for a cozy HomeStay experience <br>enjoy a comfortable and personalized
-                                getaway that feels just like home.</p>   <div class="white-button button">
+                                getaway that feels just like home.</p>
+                            <div class="white-button button">
                                 <!-- <a href="#featured">Learn More</a> -->
                             </div>
                         </div>
@@ -499,7 +500,10 @@
 
                                                 </div><!--/.tab-para-->
                                             </form>
-                                            <form style="margin-top: 1rem;"><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script> </form>
+                                            <form style="margin-top: 1rem;">
+                                                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                    data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script>
+                                            </form>
                                         </div><!--/.tabpannel-->
 
 
@@ -525,8 +529,9 @@
             </div>
             <div class="section-content">
                 <div class="tabs-content">
-                    <div class="wrapper">
-                        <ul style="overflow-x: hidden !important;" class="tabs clearfix"
+                    <div style="position: relative;" class="wrapper">
+                        <button class="left" onclick="leftScroll()"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+                        <ul style="overflow-x: auto; overflow-y: hidden;" class="scroll-images tabs clearfix"
                             data-tabgroup="first-tab-group">
                             <li><a href="#tab1" class="Lonavala tabs_group active"><span><img
                                             src="https://dl.dropboxusercontent.com/s/hgm2nis5igl9b43/lonavala.png?dl=0"
@@ -540,7 +545,20 @@
                             <li><a href="#tab4" class="panchgani tabs_group"><span><img
                                             src="https://dl.dropboxusercontent.com/s/n5ryd8r0revkvjs/panchgani.png?dl=0"
                                             alt=""></span>Panchgani</a></li>
+                            <li><a href="#Stab1" class="Igatpuri tabs_group"><span><img
+                                            src="https://dl.dropboxusercontent.com/s/tr0xmcrpka0aecx/igatpurt.png?dl=0"
+                                            alt=""></span>Igatpuri</a></li>
+                            <li><a href="#Stab2" class="Karjat tabs_group"><span><img style="transform: scale(1.6);"
+                                            src="https://dl.dropboxusercontent.com/s/iid9zhh74g1akcw/karjat.png?dl=0"
+                                            alt=""></span>Karjat</a></li>
+                            <li><a href="#Stab3" class="Pune tabs_group"><span><img style="transform: scale(1.6);"
+                                            src="https://dl.dropboxusercontent.com/s/sjnfjapje0l1owf/pune.png?dl=0"
+                                            alt=""></span>Pune</a></li>
+                            <li><a href="#Stab4" class="Khopoli tabs_group"><span><img
+                                            src="https://dl.dropboxusercontent.com/s/7v1iqos6nupr5zp/khopuli.png?dl=0"
+                                            alt=""></span>Khopoli</a></li>
                         </ul>
+                        <button class="right" onclick="rightScroll()"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
 
                         <section id="first-tab-group" class="tabgroup">
                             <!-- Lonavala Tab -->
@@ -2199,30 +2217,6 @@
 
                                 </ul>
                             </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <div style="margin-top: 5rem;" class="section-content">
-                <div class="tabs-content">
-                    <div class="wrapper">
-                        <ul style="overflow-x: hidden !important;" class="tabs clearfix"
-                            data-tabgroup="second-tab-group">
-                            <li><a href="#Stab1" class="Igatpuri tabs_group active"><span><img
-                                            src="https://dl.dropboxusercontent.com/s/tr0xmcrpka0aecx/igatpurt.png?dl=0"
-                                            alt=""></span>Igatpuri</a></li>
-                            <li><a href="#Stab2" class="Karjat tabs_group"><span><img style="transform: scale(1.6);"
-                                            src="https://dl.dropboxusercontent.com/s/iid9zhh74g1akcw/karjat.png?dl=0"
-                                            alt=""></span>Karjat</a></li>
-                            <li><a href="#Stab3" class="Pune tabs_group"><span><img style="transform: scale(1.6);"
-                                            src="https://dl.dropboxusercontent.com/s/sjnfjapje0l1owf/pune.png?dl=0"
-                                            alt=""></span>Pune</a></li>
-                            <li><a href="#Stab4" class="Khopoli tabs_group"><span><img
-                                            src="https://dl.dropboxusercontent.com/s/7v1iqos6nupr5zp/khopuli.png?dl=0"
-                                            alt=""></span>Khopoli</a></li>
-                        </ul>
-
-                        <section id="second-tab-group" class="tabgroup">
                             <!-- Igatpuri Tab -->
                             <div id="Stab1">
                                 <ul>
@@ -2230,8 +2224,9 @@
                                     <li>
                                         <div class="item">
                                             <div style="position: relative;
-                                                margin-right: 20px;" id="fren" class="carousel slide"
-                                                data-ride="carousel" data-interval="3000" data-pause="false">
+                                                                    margin-right: 20px;" id="fren"
+                                                class="carousel slide" data-ride="carousel" data-interval="3000"
+                                                data-pause="false">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
                                                         <img class="d-block w-100"
@@ -2279,9 +2274,9 @@
                                                 <span class="heading">3BHK Luxurious Fully Furnished Bunglow In
                                                     Igatpuri</span>
                                                 <!-- <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p> -->
+                                                                        Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                                        volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                                        maximus finibus.</p> -->
                                                 <ul>
                                                     <li><span><i class="fa fa-home" aria-hidden="true"></i></span>
                                                         Property Name:
@@ -2291,7 +2286,7 @@
                                                     <li><span><i class="fa fa-male" aria-hidden="true"></i></span>
                                                         Adults:10</li>
                                                     <!-- <li> <span><i class="fa fa-child" aria-hidden="true"></i></span>
-                                                        Children:1</li> -->
+                                                                            Children:1</li> -->
                                                     <li> <span><i class="fa fa-life-ring" aria-hidden="true"></i></span>
                                                         Swimming Pool</li>
                                                     <li class="hello"> <span><i class="fa fa-bell"
@@ -2392,8 +2387,9 @@
                                     <li>
                                         <div class="item">
                                             <div style="position: relative;
-                                                margin-right: 20px;" id="infi" class="carousel slide"
-                                                data-ride="carousel" data-interval="3000" data-pause="false">
+                                                                    margin-right: 20px;" id="infi"
+                                                class="carousel slide" data-ride="carousel" data-interval="3000"
+                                                data-pause="false">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
                                                         <img class="d-block w-100"
@@ -2441,9 +2437,9 @@
                                                 <span class="heading">5BHK Luxurious Fully Furnished Villa In
                                                     Igatpuri</span>
                                                 <!-- <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p> -->
+                                                                        Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                                        volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                                        maximus finibus.</p> -->
                                                 <ul>
                                                     <li><span><i class="fa fa-home" aria-hidden="true"></i></span>
                                                         Property Name:
@@ -2453,7 +2449,7 @@
                                                     <li><span><i class="fa fa-male" aria-hidden="true"></i></span>
                                                         Adults:10</li>
                                                     <!-- <li> <span><i class="fa fa-child" aria-hidden="true"></i></span>
-                                                        Children:1</li> -->
+                                                                            Children:1</li> -->
                                                     <li> <span><i class="fa fa-life-ring" aria-hidden="true"></i></span>
                                                         Swimming Pool</li>
                                                     <li class="hello"> <span><i class="fa fa-bell"
@@ -2563,8 +2559,9 @@
                                     <li>
                                         <div class="item">
                                             <div style="position: relative;
-                                                margin-right: 20px;" id="barl" class="carousel slide"
-                                                data-ride="carousel" data-interval="3000" data-pause="false">
+                                                                    margin-right: 20px;" id="barl"
+                                                class="carousel slide" data-ride="carousel" data-interval="3000"
+                                                data-pause="false">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
                                                         <img class="d-block w-100"
@@ -2612,9 +2609,9 @@
                                                 <span class="heading">4BHK Luxurious Fully Furnished Villa in
                                                     Matheran</span>
                                                 <!-- <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p> -->
+                                                                        Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                                        volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                                        maximus finibus.</p> -->
                                                 <ul>
                                                     <li><span><i class="fa fa-home" aria-hidden="true"></i></span>
                                                         Property Name:
@@ -2624,7 +2621,7 @@
                                                     <li><span><i class="fa fa-male" aria-hidden="true"></i></span>
                                                         Adults:10</li>
                                                     <!-- <li> <span><i class="fa fa-child" aria-hidden="true"></i></span>
-                                                        Children:1</li> -->
+                                                                            Children:1</li> -->
                                                     <li> <span><i class="fa fa-life-ring" aria-hidden="true"></i></span>
                                                         Swimming Pool</li>
                                                     <li class="hello"> <span><i class="fa fa-bell"
@@ -2720,8 +2717,9 @@
                                     <li>
                                         <div class="item">
                                             <div style="position: relative;
-                                                margin-right: 20px;" id="turf" class="carousel slide"
-                                                data-ride="carousel" data-interval="3000" data-pause="false">
+                                                                    margin-right: 20px;" id="turf"
+                                                class="carousel slide" data-ride="carousel" data-interval="3000"
+                                                data-pause="false">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
                                                         <img class="d-block w-100"
@@ -2769,9 +2767,9 @@
                                                 <span class="heading">4BHK Luxurious Fully Furnished Farm House in
                                                     Karjat</span>
                                                 <!-- <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p> -->
+                                                                        Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                                        volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                                        maximus finibus.</p> -->
                                                 <ul>
                                                     <li><span><i class="fa fa-home" aria-hidden="true"></i></span>
                                                         Property Name:
@@ -2781,7 +2779,7 @@
                                                     <li><span><i class="fa fa-male" aria-hidden="true"></i></span>
                                                         Adults:15</li>
                                                     <!-- <li> <span><i class="fa fa-child" aria-hidden="true"></i></span>
-                                                        Children:1</li> -->
+                                                                            Children:1</li> -->
                                                     <li> <span><i class="fa fa-life-ring" aria-hidden="true"></i></span>
                                                         Swimming Pool</li>
                                                     <li class="hello"> <span><i class="fa fa-bell"
@@ -2889,8 +2887,9 @@
                                     <li>
                                         <div class="item">
                                             <div style="position: relative;
-                                                margin-right: 20px;" id="aura" class="carousel slide"
-                                                data-ride="carousel" data-interval="3000" data-pause="false">
+                                                                    margin-right: 20px;" id="aura"
+                                                class="carousel slide" data-ride="carousel" data-interval="3000"
+                                                data-pause="false">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
                                                         <img class="d-block w-100"
@@ -2937,9 +2936,9 @@
                                                 <span class="heading">6BHK Luxurious Fully Lake View Bunglow In
                                                     Pune</span>
                                                 <!-- <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p> -->
+                                                                        Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                                        volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                                        maximus finibus.</p> -->
                                                 <ul>
                                                     <li><span><i class="fa fa-home" aria-hidden="true"></i></span>
                                                         Property Name:
@@ -2949,7 +2948,7 @@
                                                     <li><span><i class="fa fa-male" aria-hidden="true"></i></span>
                                                         Adults:15</li>
                                                     <!-- <li> <span><i class="fa fa-child" aria-hidden="true"></i></span>
-                                                        Children:1</li> -->
+                                                                            Children:1</li> -->
                                                     <li> <span><i class="fa fa-life-ring" aria-hidden="true"></i></span>
                                                         Swimming Pool</li>
                                                     <li class="hello"> <span><i class="fa fa-bell"
@@ -3053,8 +3052,9 @@
                                     <li>
                                         <div class="item">
                                             <div style="position: relative;
-                                                margin-right: 20px;" id="heri" class="carousel slide"
-                                                data-ride="carousel" data-interval="3000" data-pause="false">
+                                                                    margin-right: 20px;" id="heri"
+                                                class="carousel slide" data-ride="carousel" data-interval="3000"
+                                                data-pause="false">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
                                                         <img class="d-block w-100"
@@ -3100,9 +3100,9 @@
                                                 <span class="heading">3BHK Luxurious Fully Furnished Bunglow In
                                                     Pune</span>
                                                 <!-- <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p> -->
+                                                                        Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                                        volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                                        maximus finibus.</p> -->
                                                 <ul>
                                                     <li><span><i class="fa fa-home" aria-hidden="true"></i></span>
                                                         Property Name:
@@ -3112,7 +3112,7 @@
                                                     <li><span><i class="fa fa-male" aria-hidden="true"></i></span>
                                                         Adults:15</li>
                                                     <!-- <li> <span><i class="fa fa-child" aria-hidden="true"></i></span>
-                                                        Children:1</li> -->
+                                                                            Children:1</li> -->
                                                     <li> <span><i class="fa fa-life-ring" aria-hidden="true"></i></span>
                                                         Swimming Pool</li>
                                                     <li class="hello"> <span><i class="fa fa-bell"
@@ -3215,8 +3215,9 @@
                                     <li>
                                         <div class="item">
                                             <div style="position: relative;
-                                                margin-right: 20px;" id="tran" class="carousel slide"
-                                                data-ride="carousel" data-interval="3000" data-pause="false">
+                                                                    margin-right: 20px;" id="tran"
+                                                class="carousel slide" data-ride="carousel" data-interval="3000"
+                                                data-pause="false">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
                                                         <img class="d-block w-100"
@@ -3261,9 +3262,9 @@
                                                 <h4>CASA TRANQ VILLA</h4>
                                                 <span class="heading">3BHK Private Fully Furnished Villa In Pune</span>
                                                 <!-- <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p> -->
+                                                                        Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                                        volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                                        maximus finibus.</p> -->
                                                 <ul>
                                                     <li><span><i class="fa fa-home" aria-hidden="true"></i></span>
                                                         Property Name:
@@ -3273,7 +3274,7 @@
                                                     <li><span><i class="fa fa-male" aria-hidden="true"></i></span>
                                                         Adults:16</li>
                                                     <!-- <li> <span><i class="fa fa-child" aria-hidden="true"></i></span>
-                                                        Children:1</li> -->
+                                                                            Children:1</li> -->
                                                     <li> <span><i class="fa fa-life-ring" aria-hidden="true"></i></span>
                                                         Swimming Pool</li>
                                                     <li class="hello"> <span><i class="fa fa-bell"
@@ -3376,8 +3377,9 @@
                                     <li>
                                         <div class="item">
                                             <div style="position: relative;
-                                                margin-right: 20px;" id="ash" class="carousel slide"
-                                                data-ride="carousel" data-interval="3000" data-pause="false">
+                                                                    margin-right: 20px;" id="ash"
+                                                class="carousel slide" data-ride="carousel" data-interval="3000"
+                                                data-pause="false">
                                                 <div class="carousel-inner">
                                                     <div class="carousel-item active">
                                                         <img class="d-block w-100"
@@ -3423,9 +3425,9 @@
                                                 <span class="heading">3BHK Luxurious Fully Furnished Bunglow In
                                                     Khopoli</span>
                                                 <!-- <p>Nam vel egestas nisi. Nullam lobortis magna at enim venenatis luctus.
-                                                    Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
-                                                    volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
-                                                    maximus finibus.</p> -->
+                                                                        Nam finibus, mauris eu dictum iaculis, dolor tortor cursus quam, in
+                                                                        volutpat augue lectus sed magna. Integer mollis lorem quis ipsum
+                                                                        maximus finibus.</p> -->
                                                 <ul>
                                                     <li><span><i class="fa fa-home" aria-hidden="true"></i></span>
                                                         Property Name:
@@ -3435,7 +3437,7 @@
                                                     <li><span><i class="fa fa-male" aria-hidden="true"></i></span>
                                                         Adults:10</li>
                                                     <!-- <li> <span><i class="fa fa-child" aria-hidden="true"></i></span>
-                                                        Children:1</li> -->
+                                                                            Children:1</li> -->
                                                     <li> <span><i class="fa fa-life-ring" aria-hidden="true"></i></span>
                                                         Swimming Pool</li>
                                                     <li class="hello"> <span><i class="fa fa-bell"
@@ -3481,7 +3483,7 @@
                                                             <li>Outdoor music allowed till 10.00 pm max.</li>
                                                             <li>Music not allowed after 10pm.</li>
                                                             <!-- <li>No amount will be refunded against cancellation of
-                                                                booking.</li> -->
+                                                                                    booking.</li> -->
                                                         </ol>
                                                     </li>
                                                     <li class="hello"><span><i class="fa fa-user"
@@ -3541,7 +3543,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+
+    </div>
+    </div>
+    </div>
+    </section>
     </div>
 
 
@@ -4226,7 +4232,8 @@
                             <button class="acc-btn">Do You provide Tolietries?</button>
 
                             <div class="acc-content">
-                                <p>Yes we provide Tolietries in our some Villas like per Bedroom 2 Towels ,Soap & Shampoo.</p>
+                                <p>Yes we provide Tolietries in our some Villas like per Bedroom 2 Towels ,Soap &
+                                    Shampoo.</p>
                             </div>
 
                         </div>
@@ -4321,6 +4328,7 @@
 
         })(jQuery);
     </script>
+
 </body>
 
 </html>
