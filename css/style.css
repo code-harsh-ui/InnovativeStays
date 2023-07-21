@@ -683,6 +683,13 @@ nav .active-section span {
 
 /* Check-in - check-out*/
 
+.razor-pay {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #travel-box {
   float: right;
   width: 100%;
@@ -1343,22 +1350,24 @@ label {
   z-index: 4;
 }
 
-.right, .left {
+.right,
+.left {
   background-color: #eeeeee;
   color: black;
   border-bottom: 10px solid #f5821f;
 }
 
 
-.left:hover i, .right:hover i{
+.left:hover i,
+.right:hover i {
   color: orangered;
 }
 
-.left:focus, .right:focus{
+.left:focus,
+.right:focus {
   outline: none;
 
 }
-
 
 #blog .tabs li {
   /* display: inline-block; */
@@ -1391,6 +1400,7 @@ label {
   font-weight: 600;
   transition: 0.5s;
 }
+
 #blog .tabs a span {
   height: 40px;
   width: 40px;
@@ -1402,13 +1412,9 @@ label {
   width: 100%;
 }
 
-
-
 #blog .tabs a:hover {
   color: #63452d;
 }
-
-
 
 #blog .tabs .active:hover {
   color: #373737;
@@ -1871,7 +1877,9 @@ label {
 
 /*----------------------------------- Responsive Style ---------------------------------------- */
 @media screen and (min-width: 1741px) {
-  .left,.right{
+
+  .left,
+  .right {
     display: none;
   }
 }
@@ -2303,8 +2311,8 @@ label {
 
   #blog .tabs {
     width: 86%;
-}
-  
+  }
+
 
   #blog .tabs a {
     flex-direction: column;
