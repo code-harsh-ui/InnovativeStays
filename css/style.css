@@ -683,11 +683,30 @@ nav .active-section span {
 
 /* Check-in - check-out*/
 
+.pay_button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .razor-pay {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.easyPay img {
+  height: 40px;
+  width: 16rem;
+  margin: 0px 14px;
+  z-index: 3;
+  border: 1px solid #072654;
+  box-shadow: 1px 1px 2px 1px #00000036;
+  margin-top: 15px;
+  border-radius: 4px;
 }
 
 #travel-box {

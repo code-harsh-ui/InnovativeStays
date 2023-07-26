@@ -107,7 +107,26 @@
         </div>
     </header>
 
-
+    <!-- Modal -->
+    <div style="overflow-y: hidden;" class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div style="z-index: 1500;" class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div style="padding: 0;" class="modal-body">
+                    <img src="img/pay_modal.jpg" alt="" srcset="" style="
+                            height: 600px;
+                            width: 100%;
+                            margin: 0 auto;
+                        ">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="sidebar-navigation hidde-sm hidden-xs">
         <div class="logo">
@@ -240,6 +259,7 @@
             <!-- // Item -->
         </div>
     </div>
+
 
 
 
@@ -500,10 +520,21 @@
 
                                                 </div><!--/.tab-para-->
                                             </form>
-                                            <form class="razor-pay">
-                                                <script src="https://checkout.razorpay.com/v1/payment-button.js"
-                                                    data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script>
-                                            </form>
+                                            <!-- <div class="modal">
+                                                <img src="img/pay_modal.jpg" alt="" srcset="">
+                                            </div> -->
+                                            <div class="pay_button">
+                                                <form class="razor-pay">
+                                                    <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                                        data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script>
+                                                </form>
+                                                <a class="easyPay" data-toggle="modal"
+                                                    data-target="#exampleModalCenter"><img src="img/eazypay logo.jpg"
+                                                        alt="" srcset=""></a>
+
+
+
+                                            </div>
                                         </div><!--/.tabpannel-->
 
 
@@ -4084,9 +4115,6 @@
                 </div>
             </div>
         </section>
-
-
-
 
         <!-- <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
         <div style="padding: 0 5rem;" class="elfsight-app-d23cb66e-38c8-45dd-a6a5-6fc5ef9c5341"></div> -->
