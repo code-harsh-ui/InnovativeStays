@@ -2224,6 +2224,10 @@ label {
 }
 
 @media (max-width: 690px) {
+  .easyPay_image {
+    height: auto !important;
+  }
+
   .tab-para {
     padding: 43px 9px 0px;
   }
