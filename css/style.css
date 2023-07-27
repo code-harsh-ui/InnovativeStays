@@ -702,11 +702,10 @@ nav .active-section span {
   height: 40px;
   width: 16rem;
   margin: 0px 14px;
-  z-index: 3;
   border: 1px solid #072654;
   box-shadow: 1px 1px 2px 1px #00000036;
   margin-top: 15px;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 #travel-box {
