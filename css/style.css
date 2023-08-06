@@ -706,6 +706,7 @@ nav .active-section span {
   box-shadow: 1px 1px 2px 1px #00000036;
   margin-top: 15px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 #travel-box {
