@@ -3,6 +3,11 @@ body {
   overflow-x: hidden;
 }
 
+.modal-open {
+  overflow: auto !important;
+  padding-right: 0 !important;
+}
+
 ::-webkit-scrollbar {
   height: 5px;
   width: 4px;
