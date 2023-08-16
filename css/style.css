@@ -1908,6 +1908,14 @@ label {
   }
 }
 
+@media screen and (min-width: 768px) {
+
+  .modal-dialog {
+    width: 600px;
+    margin: 10px auto;
+  }
+}
+
 @media screen and (max-width: 1080px) {
 
   .tm-tab-link-li {
