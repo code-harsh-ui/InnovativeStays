@@ -565,9 +565,9 @@ nav .active-section span {
   display: block;
 }
 
-.Modern-Slider .item-1 .image {
+/* .Modern-Slider .item-1 .image {
   background-image: linear-gradient(to top, #000000, rgb(248 248 248 / 1%)), url(https://dl.dropboxusercontent.com/s/zp5azo00ckdv9zc/slide_1.jpg?dl=0);
-}
+} */
 
 .Modern-Slider .item-2 .image {
   background-image: linear-gradient(to top, #000000, rgb(248 248 248 / 1%)), url(https://dl.dropboxusercontent.com/s/gdn0vktvvefdlho/slide_2.jpg?dl=0);

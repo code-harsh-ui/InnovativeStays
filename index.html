@@ -70,15 +70,15 @@
 
 <body>
     <!-- Preloader -->
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="preloader-inner">
-            <div class="preloader-icon"> <span></span><img style="border-radius: 50%;"
-                    src="https://dl.dropboxusercontent.com/s/r8a66j2pkridwdc/loader.jpg?dl=0" alt="preloader" srcset="">
+            <div class="preloader-icon"> <span></span><img style="border-radius: 50%;" src="./img/logo.png"
+                    alt="preloader" srcset="">
                 <span></span>
             </div>
         </div>
         <h1 style="display: flex; justify-content: center; margin-top: 10%;">Please wait</h1>
-    </div> -->
+    </div>
 
     <header class="nav-down responsive-nav hidden-lg hidden-md">
         <div style="display: flex; margin-left: 16px;" class="logo">
@@ -117,7 +117,9 @@
                     </button>
                 </div>
                 <div style="padding: 0;" class="modal-body">
-                    <img class="easyPay_image" src="img/pay_modal.jpg" alt="" srcset="" style="
+                    <img class="easyPay_image"
+                        src="https://dl.dropboxusercontent.com/scl/fi/wyuop3exdwd9filrdayv0/pay_modal.jpg?rlkey=xiyzz02tpaoyf8y8mkfuy3gxt&dl=0"
+                        alt="" srcset="" style="
                             height: 600px;
                             width: 100%;
                             margin: 0 auto;
@@ -534,7 +536,8 @@
                                                         data-payment_button_id="pl_MG2Z3s0ayBRr9e" async> </script>
                                                 </form>
                                                 <a class="easyPay" data-toggle="modal"
-                                                    data-target="#exampleModalCenter"><img src="img/eazypay logo.jpg"
+                                                    data-target="#exampleModalCenter"><img
+                                                        src="https://dl.dropboxusercontent.com/scl/fi/zv51dta5a20wa7zzhdh10/eazypay-logo.jpg?rlkey=j389ujsb46bkjco5msipxrefj&dl=0"
                                                         alt="" srcset=""></a>
 
 
@@ -4686,19 +4689,31 @@
 
         // Preloader
 
-        // (function ($) {
-        //     "use strict";
-        //     window.onload = function () {
-        //         window.setTimeout(fadeout, 500);
-        //     };
+        (function ($) {
+            // "use strict"; // This line is commented out
 
-        //     function fadeout() {
-        //         var preloader = document.querySelector('.preloader');
-        //         preloader.style.opacity = '0';
-        //         preloader.style.display = 'none';
-        //     }
+            // Create a new image element
+            var img = new Image();
 
-        // })(jQuery);
+            // Set the image source
+            img.src = "https://dl.dropboxusercontent.com/scl/fi/3926rlt7u7d2cviamag57/slide_1.jpg?rlkey=xto4lwt22lzykebz2sk7f0ege&dl=0";
+
+            // Attach an onload event to the image
+            img.onload = function () {
+                // Apply the background image once it's loaded
+                $(".Modern-Slider .item-1 .image").css("background-image", "linear-gradient(to top, #000000, rgb(248 248 248 / 1%)), url(" + img.src + ")");
+
+                // Schedule the preloader to fade out after a delay
+                window.setTimeout(fadeout, 500);
+            };
+
+            function fadeout() {
+                var preloader = document.querySelector('.preloader');
+                preloader.style.opacity = '0';
+                preloader.style.display = 'none';
+            }
+        })(jQuery);
+
     </script>
 
 </body>
