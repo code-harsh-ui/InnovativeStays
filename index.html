@@ -4689,30 +4689,16 @@
 
         // Preloader
 
-        (function ($) {
-            // "use strict"; // This line is commented out
-
-            // Create a new image element
-            var img = new Image();
-
-            // Set the image source
-            img.src = "https://dl.dropboxusercontent.com/scl/fi/3926rlt7u7d2cviamag57/slide_1.jpg?rlkey=xto4lwt22lzykebz2sk7f0ege&dl=0";
-
-            // Attach an onload event to the image
-            img.onload = function () {
-                // Apply the background image once it's loaded
-                $(".Modern-Slider .item-1 .image").css("background-image", "linear-gradient(to top, #000000, rgb(248 248 248 / 1%)), url(" + img.src + ")");
-
-                // Schedule the preloader to fade out after a delay
-                window.setTimeout(fadeout, 500);
-            };
-
-            function fadeout() {
+        $(document).ready(function () {
+            // Delay the hiding of the preloader for 2 seconds (2000 milliseconds)
+            setTimeout(function () {
                 var preloader = document.querySelector('.preloader');
                 preloader.style.opacity = '0';
                 preloader.style.display = 'none';
-            }
-        })(jQuery);
+            }, 2000);
+        });
+
+
 
     </script>
 
