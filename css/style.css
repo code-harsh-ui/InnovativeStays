@@ -566,15 +566,15 @@ nav .active-section span {
 }
 
 .Modern-Slider .item-1 .image {
-  background-image: linear-gradient(to top, #000000, rgb(248 248 248 / 1%)), url(https://dl.dropboxusercontent.com/scl/fi/3926rlt7u7d2cviamag57/slide_1.jpg?rlkey=xto4lwt22lzykebz2sk7f0ege&dl=0);
+  background-image: linear-gradient(to top, #000000, rgb(248 248 248 / 1%)), url("../img/slide_1.jpg");
 }
 
 .Modern-Slider .item-2 .image {
-  background-image: linear-gradient(to top, #000000, rgb(248 248 248 / 1%)), url(https://dl.dropboxusercontent.com/s/gdn0vktvvefdlho/slide_2.jpg?dl=0);
+  background-image: linear-gradient(to top, #000000, rgb(248 248 248 / 1%)), url("../img/slide_2.jpg");
 }
 
 .Modern-Slider .item-3 .image {
-  background-image: linear-gradient(to top, #000000, rgb(248 248 248 / 1%)), url(https://dl.dropboxusercontent.com/s/c6onjxlgrk3h8mb/slide_3.jpg?dl=0);
+  background-image: linear-gradient(to top, #000000, rgb(248 248 248 / 1%)), url("../img/slide_3.jpg");
 }
 
 .Modern-Slider .PrevArrow:before {
