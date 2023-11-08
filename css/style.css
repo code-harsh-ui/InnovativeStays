@@ -1856,6 +1856,22 @@ label {
 }
 
 
+.terms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+  /* margin-bottom: 2rem; */
+  line-height: 40px;
+  background: #242424;
+}
+
+.terms a {
+  margin: 0px 1rem;
+  color: #9d9d9d;
+  font-size: 1.1rem;
+}
+
 
 /* Footer Style */
 
