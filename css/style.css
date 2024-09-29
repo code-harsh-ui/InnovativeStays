@@ -279,7 +279,7 @@ header {
 /* Sidebar Style */
 
 .sidebar-navigation {
-  width: 18.5%;
+  width: 22.5%;
   float: left;
   height: 100%;
   position: fixed;
@@ -315,6 +315,7 @@ header {
 .sidebar-navigation .logo a img {
   width: 100%;
   height: 117%;
+  object-fit: contain;
 }
 
 .sidebar-navigation .logo a::after {
