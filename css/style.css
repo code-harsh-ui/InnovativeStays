@@ -9,11 +9,6 @@ body {
   padding-right: 0 !important;
 }
 
-/* testimonial widget image preview modal */
-.sk-post-modal-overlay {
-  display: none !important;
-}
-
 ::-webkit-scrollbar {
   height: 5px;
   width: 4px;
