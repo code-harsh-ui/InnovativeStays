@@ -204,6 +204,56 @@ if (btns.length > 1) {
 
 // Booking Form
 
+// function whatsapp() {
+//   var name = $("#name").val();
+//   var phone = $("#phone").val();
+//   var villa = $("#villa").val();
+//   var size = $("#size").val();
+//   var guest = $("#guest").val();
+//   var range = $("#range").val();
+//   var children = $("#children").val();
+//   var datepicker = $("#datepicker").val();
+//   var datepicker_two = $("#datepicker_two").val();
+//   var pets = $("#pets").val();
+
+//   var url =
+//     "https://wa.me/+918355936182?text=" +
+//     "*Query from (www.innovativestays.com)* " +
+//     "%0a" +
+//     "*Name :* " +
+//     name +
+//     "%0a" +
+//     "*Phone :* " +
+//     phone +
+//     "%0a" +
+//     "*Villa :* " +
+//     villa +
+//     "%0a" +
+//     "*Check-In :* " +
+//     datepicker +
+//     "%0a" +
+//     "*Check-Out :* " +
+//     datepicker_two +
+//     "%0a" +
+//     "*BHK :* " +
+//     size +
+//     "%0a" +
+//     "*Range :* " +
+//     range +
+//     "%0a" +
+//     "*Children :* " +
+//     children +
+//     "%0a" +
+//     "*Guests :* " +
+//     guest +
+//     "%0a" +
+//     "*Pets :* " +
+//     pets;
+
+//   window.open(url, "_blank").focus();
+// }
+
+// updated booking form
 function whatsapp() {
   var name = $("#name").val();
   var phone = $("#phone").val();
@@ -215,6 +265,88 @@ function whatsapp() {
   var datepicker = $("#datepicker").val();
   var datepicker_two = $("#datepicker_two").val();
   var pets = $("#pets").val();
+
+  console.log({
+    name,
+    phone,
+    villa,
+    size,
+    guest,
+    range,
+    children,
+    datepicker,
+    datepicker_two,
+    pets,
+  });
+
+  // // Validation
+  // if (
+  //   !name ||
+  //   !phone ||
+  //   !villa ||
+  //   !size ||
+  //   !guest ||
+  //   !range ||
+  //   !children ||
+  //   !datepicker ||
+  //   !datepicker_two ||
+  //   !pets
+  // ) {
+  //   alert("Please fill in all the fields before submitting.");
+  //   return; // Stop the function if validation fails
+  // }
+
+  // Individual Validation for Each Field
+  if (!name) {
+    alert("Please enter your name.");
+    $("#name").focus(); // Focus the empty input field
+    return;
+  }
+  if (!phone) {
+    alert("Please enter your phone number.");
+    $("#phone").focus();
+    return;
+  }
+  if (!villa) {
+    alert("Please select a villa.");
+    $("#villa").focus();
+    return;
+  }
+  if (!size) {
+    alert("Please select the size.");
+    $("#size").focus();
+    return;
+  }
+  if (!guest) {
+    alert("Please enter the number of guests.");
+    $("#guest").focus();
+    return;
+  }
+  if (!range) {
+    alert("Please specify the range.");
+    $("#range").focus();
+    return;
+  }
+  if (!children) {
+    alert("Please enter the number of children.");
+    $("#children").focus();
+    return;
+  }
+  if (!datepicker) {
+    alert("Please select a check-in date.");
+    $("#datepicker").focus();
+    return;
+  }
+  if (!datepicker_two) {
+    alert("Please select a check-out date.");
+    $("#datepicker_two").focus();
+    return;
+  }
+  if (!pets) {
+    alert("Please specify if you have pets.");
+    $("#pets").focus();
+    return;
+  }
 
   var url =
     "https://wa.me/+918355936182?text=" +
