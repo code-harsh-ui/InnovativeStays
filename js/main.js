@@ -199,7 +199,7 @@ btns.forEach((el) => el.addEventListener("click", accordion));
 
 // Open the first accordion by default
 if (btns.length > 1) {
-  btns[1].click();
+  btns[3].click();
 }
 
 // Booking Form
