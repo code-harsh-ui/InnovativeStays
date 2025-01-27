@@ -141,7 +141,7 @@ const links = document.querySelectorAll(".villa-links");
 links.forEach((item) => {
   item.addEventListener("click", () => {
     let el = document.getElementById(item.getAttribute("data-link"));
-    el.scrollIntoView({ block: "center" });
+    el.scrollIntoView({ block: "start" });
   });
 });
 
@@ -322,11 +322,11 @@ function whatsapp() {
     $("#guest").focus();
     return;
   }
-  if (!range) {
-    alert("Please specify the range.");
-    $("#range").focus();
-    return;
-  }
+  // if (!range) {
+  //   alert("Please specify the range.");
+  //   $("#range").focus();
+  //   return;
+  // }
   if (!children) {
     alert("Please enter the number of children.");
     $("#children").focus();
