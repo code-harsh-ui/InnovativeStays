@@ -111,6 +111,7 @@ p {
   font-size: 13px;
   color: #7a7a7a;
   line-height: 24px;
+  margin: 5px 0;
 }
 
 ::placeholder {
@@ -1185,7 +1186,7 @@ label {
 
 .tm-slideshow {
   width: 50%;
-  border: 6px solid #f5821f;
+  border: 6px solid #da894100;
 }
 
 .tm-slideshow-description {
@@ -1303,7 +1304,7 @@ label {
 }
 
 .whyInno .col-lg-2 i {
-  font-size: 10rem;
+  font-size: 5rem;
 }
 
 .team-thumb {
@@ -1668,6 +1669,17 @@ label {
   padding: 80px 60px;
 }
 
+.contact-details {
+  margin-bottom: 2rem;
+}
+.contact-details p {
+  position: relative;
+  display: block;
+  top: 0;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
 /* Accordion start  */
 
 .card {
@@ -1702,7 +1714,7 @@ label {
 }
 
 .acc-container {
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .acc-btn {
@@ -2379,7 +2391,7 @@ label {
   }
 
   .acc-container {
-    padding: 4rem 0rem;
+    padding: 2rem 0rem;
   }
 
   .acc-btn {
