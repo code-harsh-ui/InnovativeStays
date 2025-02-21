@@ -162,7 +162,9 @@
     </div>
 
     <!-- Subscribe Modal Start -->
-    <div style="overflow-y: hidden;padding-right: 8px;display: block;background: #00000073;backdrop-filter: blur(3px);" class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true" data-backdrop="static">
+    <div style="overflow-y: hidden;padding-right: 8px;display: block;background: #00000073;backdrop-filter: blur(3px);"
+        class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true"
+        data-backdrop="static">
         <div style="z-index: 1050;" class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -4847,27 +4849,28 @@
 
 
     </script>
-        <script>
+    <script>
 
-            function showModalOnScroll() {
-    let scrollPosition = window.scrollY;
-    let pageHeight = document.documentElement.scrollHeight;
-    let viewportHeight = window.innerHeight;
+        function showModalOnScroll() {
+            let scrollPosition = window.scrollY;
+            let pageHeight = document.documentElement.scrollHeight;
+            let viewportHeight = window.innerHeight;
 
-    // Trigger modal when scrolled halfway
-    if (scrollPosition > (pageHeight - viewportHeight) / 4) {
-        let modal = new bootstrap.Modal(document.getElementById('contactModal'));
-        modal.show();
+            // Trigger modal when scrolled halfway
+            if (scrollPosition > (pageHeight - viewportHeight) / 4) {
+                let modal = new bootstrap.Modal(document.getElementById('contactModal'));
+                modal.show();
 
-        // Remove event listener after showing modal once
-        document.removeEventListener("scroll", showModalOnScroll);
-    }
-}
+                // Remove event listener after showing modal once
+                document.removeEventListener("scroll", showModalOnScroll);
+            }
+        }
 
-// Add event listener
-document.addEventListener("scroll", showModalOnScroll);
+        // Add event listener
+        document.addEventListener("scroll", showModalOnScroll);
+        // update
 
-        </script>
+    </script>
 
 </body>
 
