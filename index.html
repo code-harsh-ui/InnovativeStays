@@ -52,6 +52,9 @@
         gtag('config', 'G-Q0TD9CP9C9');
     </script>
 
+
+    
+
 </head>
 <style>
     .css-afsrdm,
@@ -162,7 +165,7 @@
     </div>
 
     <!-- Subscribe Modal Start -->
-    <!-- <div style="overflow-y: hidden;padding-right: 8px;display: block;background: #00000073;backdrop-filter: blur(3px);"
+    <div style="overflow-y: hidden;padding-right: 8px;display: block;background: #00000073;backdrop-filter: blur(3px);"
         class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true"
         data-backdrop="static">
         <div style="z-index: 1050;" class="modal-dialog modal-dialog-centered" role="document">
@@ -174,21 +177,21 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="contactForm">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                         </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone Number</label>
-                            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+                            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Subscribeee</button>
+                        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
                     </form>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Subscribe Modal End -->
 
     <div class="sidebar-navigation hidde-sm hidden-xs">
@@ -4849,7 +4852,7 @@
 
 
     </script>
-    <!-- <script>
+    <script>
 
         function showModalOnScroll() {
             let scrollPosition = window.scrollY;
@@ -4870,7 +4873,33 @@
         document.addEventListener("scroll", showModalOnScroll);
         // update
 
-    </script> -->
+    </script>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        
+        var formData = {
+            name: document.getElementById("name").value,
+            phone: document.getElementById("phone").value
+        };
+
+        console.log(formData)
+    
+        fetch("https://script.google.com/macros/s/AKfycbwyAUHqgnQYUBeeY7-YhcSGDP1kzcqqLdV1aqwc0QZ_dtZCCW98_4BKtJm1knUURr5DWA/exec", {  // Replace with your Google Apps Script URL
+            method: "POST",
+            mode: "no-cors", //
+            body: JSON.stringify(formData),
+            headers: { "Content-Type": "application/json" }
+        })
+        .then(response => response.text())
+        .then(data => {
+            alert("Form submitted successfully!");
+            document.getElementById("contactForm").reset(); // Clear the form after submission
+        })
+        .catch(error => console.error("Error:", error));
+    });
+    </script>
 
 </body>
 
